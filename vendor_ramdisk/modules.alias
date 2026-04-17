@@ -315,6 +315,8 @@ alias of:N*T*Cqcom,wcn6450 icnss2
 alias of:N*T*Cqcom,wcn6450C* icnss2
 alias of:N*T*Cqcom,ravelin-gcc gcc_ravelin
 alias of:N*T*Cqcom,ravelin-gccC* gcc_ravelin
+alias of:N*T*Cxiaomi,xm-chg-dfs xm_chg_dfs
+alias of:N*T*Cxiaomi,xm-chg-dfsC* xm_chg_dfs
 alias net-pf-42 qrtr
 alias of:N*T*Cqcom,sfpb-mutex qcom_hwspinlock
 alias of:N*T*Cqcom,sfpb-mutexC* qcom_hwspinlock

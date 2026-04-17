@@ -1,6 +1,7 @@
 /lib/modules/sdpm_clk.ko:
 /lib/modules/debug-regulator.ko:
 /lib/modules/qcom_pm8008-regulator.ko: /lib/modules/debug-regulator.ko
+/lib/modules/miev.ko:
 /lib/modules/clk-dummy.ko: /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko
 /lib/modules/hyp_core_ctl.ko: /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko /lib/modules/thermal_pause.ko /lib/modules/sched-walt.ko /lib/modules/qcom-cpufreq-hw.ko
 /lib/modules/cnss_plat_ipc_qmi_svc.ko: /lib/modules/qmi_helpers.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko
@@ -57,6 +58,7 @@
 /lib/modules/gh_dbl.ko:
 /lib/modules/gh_ctrl.ko:
 /lib/modules/icc-debug.ko:
+/lib/modules/hq_notify.ko:
 /lib/modules/qcom_iommu_debug.ko: /lib/modules/qcom_iommu_util.ko
 /lib/modules/qcom_ramdump.ko:
 /lib/modules/qnoc-parrot.ko: /lib/modules/qnoc-qos.ko /lib/modules/icc-rpmh.ko /lib/modules/socinfo.ko /lib/modules/icc-debug.ko /lib/modules/icc-bcm-voter.ko /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko
@@ -78,7 +80,7 @@
 /lib/modules/qcom_cpu_vendor_hooks.ko:
 /lib/modules/sdhci-msm-scaling.ko:
 /lib/modules/coresight-csr.ko: /lib/modules/coresight.ko
-/lib/modules/leds-qpnp-flash-v2.ko: /lib/modules/qti_battery_charger_main.ko /lib/modules/xiaomi_usb_touch_notifier.ko /lib/modules/xm_smart_chg.ko /lib/modules/mi_thermal_interface.ko /lib/modules/hq_audio.ko /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/panel_event_notifier.ko
+/lib/modules/leds-qpnp-flash-v2.ko: /lib/modules/qti_battery_charger_main.ko /lib/modules/xiaomi_usb_touch_notifier.ko /lib/modules/hq_notify.ko /lib/modules/xm_smart_chg.ko /lib/modules/mi_thermal_interface.ko /lib/modules/hq_audio.ko /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/panel_event_notifier.ko
 /lib/modules/minidump.ko: /lib/modules/smem.ko
 /lib/modules/qti_qmi_cdev.ko: /lib/modules/qmi_helpers.ko
 /lib/modules/altmode-glink.ko: /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko
@@ -88,7 +90,7 @@
 /lib/modules/iommu-logger.ko:
 /lib/modules/msm_geni_serial.ko: /lib/modules/msm-geni-se.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko
 /lib/modules/phy-msm-ssusb-qmp.ko:
-/lib/modules/qti_battery_charger_main.ko: /lib/modules/xiaomi_usb_touch_notifier.ko /lib/modules/xm_smart_chg.ko /lib/modules/mi_thermal_interface.ko /lib/modules/hq_audio.ko /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/panel_event_notifier.ko
+/lib/modules/qti_battery_charger_main.ko: /lib/modules/xiaomi_usb_touch_notifier.ko /lib/modules/hq_notify.ko /lib/modules/xm_smart_chg.ko /lib/modules/mi_thermal_interface.ko /lib/modules/hq_audio.ko /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/panel_event_notifier.ko
 /lib/modules/mem-offline.ko:
 /lib/modules/msm_kgsl.ko: /lib/modules/msm_performance.ko /lib/modules/qcom-pmu-lib.ko /lib/modules/qcom-dcvs.ko /lib/modules/dcvs_fp.ko /lib/modules/mem_buf_dev.ko /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/qcom_iommu_util.ko /lib/modules/secure_buffer.ko /lib/modules/mdt_loader.ko /lib/modules/qcom-scm.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko /lib/modules/sched-walt.ko /lib/modules/qcom-cpufreq-hw.ko /lib/modules/debug-regulator.ko
 /lib/modules/qcom-pmu-lib.ko:
@@ -150,10 +152,11 @@
 /lib/modules/qcom_sysmon.ko: /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko
 /lib/modules/gh_virt_wdt.ko: /lib/modules/qcom_wdt_core.ko /lib/modules/qcom-scm.ko /lib/modules/minidump.ko /lib/modules/smem.ko
 /lib/modules/ucsi_glink.ko: /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko
+/lib/modules/xm_chg_dfs.ko: /lib/modules/miev.ko /lib/modules/hq_notify.ko
 /lib/modules/stm_core.ko:
 /lib/modules/bwmon.ko: /lib/modules/qcom-dcvs.ko /lib/modules/dcvs_fp.ko /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko
 /lib/modules/tz_log.ko: /lib/modules/tmecom-intf.ko /lib/modules/qcom-scm.ko
-/lib/modules/xiaomi_touch.ko:
+/lib/modules/xiaomi_touch.ko: /lib/modules/miev.ko
 /lib/modules/qrtr.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko
 /lib/modules/gh_mem_notifier.ko: /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko
 /lib/modules/qcom_hwspinlock.ko:
@@ -191,7 +194,7 @@
 /lib/modules/spmi-pmic-arb-debug.ko:
 /lib/modules/qcom_ipc_lite.ko:
 /lib/modules/gpucc-ravelin.ko: /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko
-/lib/modules/fts_8725.ko: /lib/modules/xiaomi_touch_notifier.ko /lib/modules/xiaomi_headset_touch_notifier.ko /lib/modules/xiaomi_touch.ko /lib/modules/hqsysfs.ko /lib/modules/hqsys_pcba.ko /lib/modules/xiaomi_panel_notifier.ko /lib/modules/xiaomi_usb_touch_notifier.ko /lib/modules/smem.ko
+/lib/modules/fts_8725.ko: /lib/modules/xiaomi_touch_notifier.ko /lib/modules/xiaomi_headset_touch_notifier.ko /lib/modules/xiaomi_touch.ko /lib/modules/miev.ko /lib/modules/hqsysfs.ko /lib/modules/hqsys_pcba.ko /lib/modules/xiaomi_panel_notifier.ko /lib/modules/xiaomi_usb_touch_notifier.ko /lib/modules/smem.ko
 /lib/modules/mem-hooks.ko:
 /lib/modules/rimps_log.ko: /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko
 /lib/modules/wil6210.ko: /lib/modules/msm_11ad_proxy.ko /lib/modules/memory_dump_v2.ko /lib/modules/cfg80211.ko /lib/modules/qcom-scm.ko /lib/modules/pci-msm-drv.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/debug-regulator.ko
@@ -242,7 +245,7 @@
 /lib/modules/nvmem_qfprom.ko:
 /lib/modules/pinctrl-msm.ko: /lib/modules/qcom-scm.ko
 /lib/modules/mem_buf_dev.ko: /lib/modules/secure_buffer.ko /lib/modules/qcom-scm.ko /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko
-/lib/modules/msm_drm.ko: /lib/modules/ocp2131_bias.ko /lib/modules/pm8941-pwrkey.ko /lib/modules/mtdoops.ko /lib/modules/msm-mmrm.ko /lib/modules/spmi-pmic-arb.ko /lib/modules/hdcp.ko /lib/modules/smcinvoke_mod.ko /lib/modules/qseecom-mod.ko /lib/modules/msm_ext_display.ko /lib/modules/fsa4480-i2c.ko /lib/modules/ucsi_glink.ko /lib/modules/qti-regmap-debugfs.ko /lib/modules/altmode-glink.ko /lib/modules/xiaomi_touch_notifier.ko /lib/modules/gh_irq_lend.ko /lib/modules/gh_mem_notifier.ko /lib/modules/mtd.ko /lib/modules/hqsysfs.ko /lib/modules/hqsys_pcba.ko /lib/modules/pinctrl-msm.ko /lib/modules/msm_dma_iommu_mapping.ko /lib/modules/xiaomi_panel_notifier.ko /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/mem_buf_dev.ko /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/qcom_iommu_util.ko /lib/modules/dwc3-msm.ko /lib/modules/secure_buffer.ko /lib/modules/qcom-scm.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/panel_event_notifier.ko /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko /lib/modules/debug-regulator.ko
+/lib/modules/msm_drm.ko: /lib/modules/ocp2131_bias.ko /lib/modules/pm8941-pwrkey.ko /lib/modules/mtdoops.ko /lib/modules/msm-mmrm.ko /lib/modules/spmi-pmic-arb.ko /lib/modules/hdcp.ko /lib/modules/smcinvoke_mod.ko /lib/modules/qseecom-mod.ko /lib/modules/msm_ext_display.ko /lib/modules/fsa4480-i2c.ko /lib/modules/ucsi_glink.ko /lib/modules/qti-regmap-debugfs.ko /lib/modules/altmode-glink.ko /lib/modules/xiaomi_touch_notifier.ko /lib/modules/gh_irq_lend.ko /lib/modules/gh_mem_notifier.ko /lib/modules/mtd.ko /lib/modules/miev.ko /lib/modules/hqsysfs.ko /lib/modules/hqsys_pcba.ko /lib/modules/pinctrl-msm.ko /lib/modules/msm_dma_iommu_mapping.ko /lib/modules/xiaomi_panel_notifier.ko /lib/modules/pmic_glink.ko /lib/modules/pdr_interface.ko /lib/modules/qmi_helpers.ko /lib/modules/mem_buf_dev.ko /lib/modules/qcom_rpmh.ko /lib/modules/cmd-db.ko /lib/modules/qcom_iommu_util.ko /lib/modules/dwc3-msm.ko /lib/modules/secure_buffer.ko /lib/modules/qcom-scm.ko /lib/modules/rproc_qcom_common.ko /lib/modules/qcom_smd.ko /lib/modules/qcom_glink_smem.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko /lib/modules/clk-qcom.ko /lib/modules/gdsc-regulator.ko /lib/modules/proxy-consumer.ko /lib/modules/panel_event_notifier.ko /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko /lib/modules/debug-regulator.ko
 /lib/modules/binder_prio.ko:
 /lib/modules/hvc_gunyah.ko: /lib/modules/gh_rm_drv.ko /lib/modules/gh_dbl.ko /lib/modules/gh_msgq.ko /lib/modules/gh_arm_drv.ko
 /lib/modules/slimbus.ko:
@@ -263,7 +266,7 @@
 /lib/modules/phy-generic.ko:
 /lib/modules/qrtr-smd.ko: /lib/modules/qrtr.ko /lib/modules/qcom_glink.ko /lib/modules/qcom_ipc_logging.ko /lib/modules/minidump.ko /lib/modules/smem.ko
 /lib/modules/qcom_rimps.ko:
-/lib/modules/nvt_36672c.ko: /lib/modules/xiaomi_touch_notifier.ko /lib/modules/xiaomi_touch.ko /lib/modules/hqsysfs.ko /lib/modules/hqsys_pcba.ko /lib/modules/xiaomi_panel_notifier.ko /lib/modules/xiaomi_usb_touch_notifier.ko /lib/modules/smem.ko
+/lib/modules/nvt_36672c.ko: /lib/modules/xiaomi_touch_notifier.ko /lib/modules/xiaomi_touch.ko /lib/modules/miev.ko /lib/modules/hqsysfs.ko /lib/modules/hqsys_pcba.ko /lib/modules/xiaomi_panel_notifier.ko /lib/modules/xiaomi_usb_touch_notifier.ko /lib/modules/smem.ko
 /lib/modules/cqhci.ko: /lib/modules/sdhci-msm-scaling.ko /lib/modules/crypto-qti-common.ko /lib/modules/crypto-qti-hwkm.ko /lib/modules/hwkm.ko /lib/modules/tmecom-intf.ko /lib/modules/qcom-scm.ko
 /lib/modules/regmap-spmi.ko:
 /lib/modules/sched-walt.ko: /lib/modules/qcom-cpufreq-hw.ko

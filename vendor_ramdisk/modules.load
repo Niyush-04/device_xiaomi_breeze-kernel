@@ -87,5 +87,8 @@ ufshcd-crypto-qti.ko
 tmecom-intf.ko
 bcl_pmic5.ko
 mi_memory.ko
+miev.ko
 dispcc-ravelin.ko
 simtray.ko
+hq_notify.ko
+xm_chg_dfs.ko
